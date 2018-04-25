@@ -1,0 +1,22 @@
+{
+  "name": "teste",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.16.3",
+    "line-reader": "^0.4.0",
+    "linereader": "^1.1.0",
+    "morgan": "^1.9.0",
+    "socket.io": "^2.1.0",
+    "whatwg-fetch": "^2.0.4"
+  }
+}

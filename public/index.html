@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Leitor de logs SISP</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="/socket.io/socket.io.js" type="text/javascript" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <span id="server-status">Status do Servidor <i class="fas fa-check-circle"></i></span>
+      <span id="data"></span>
+    </div>
+    <div class="qtdErros"></div>
+    <div class="loadingPage">
+      <div class="sk-circle">
+        <div class="sk-circle1 sk-child"></div>
+        <div class="sk-circle2 sk-child"></div>
+        <div class="sk-circle3 sk-child"></div>
+        <div class="sk-circle4 sk-child"></div>
+        <div class="sk-circle5 sk-child"></div>
+        <div class="sk-circle6 sk-child"></div>
+        <div class="sk-circle7 sk-child"></div>
+        <div class="sk-circle8 sk-child"></div>
+        <div class="sk-circle9 sk-child"></div>
+        <div class="sk-circle10 sk-child"></div>
+        <div class="sk-circle11 sk-child"></div>
+        <div class="sk-circle12 sk-child"></div>
+      </div>
+    </div>
+    <div class="dados-header">
+      <div class="dados-elem" id="logs">
+          <span class="titulo">Log</span>
+          <button id="logExp">Expandir</button>
+          <div class="elementos log">
+          </div>
+      </div>
+      <div class="dados-elem" id="tipos">
+        <span class="titulo">Tipo</span>
+        <div class="elementos tipo">
+        </div>
+      </div>
+      <div class="dados-elem" id="urls">
+        <span class="titulo">URL</span>
+        <div class="elementos url">
+        </div>
+      </div>
+      <div class="dados-elem" id="horas">
+        <span class="titulo">Hora</span>
+        <div class="elementos hora">
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js" charset="utf-8"></script>
+  </body>
+</html>
