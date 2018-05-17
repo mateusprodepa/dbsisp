@@ -28,11 +28,11 @@ io.on("connection", socket => {
 	loadLogs("http://10.1.13.27/logsisp/sisp2-minuto-access.log", socket);
 	setInterval(() => {
 		loadLogs("http://10.1.13.27/logsisp/sisp2-minuto-access.log", socket);
-	}, 60000);
+	}, 10000);
 });
 
 function loadLogs(url, socket) {
-	readers.readLogsFromPage(url, "SOAP_ERROR", logs => {
+	readers.readLogsFromPage(url, "POST", logs => {
 		try {
 			socket.emit("logs", logs);
 			socket.emit("log-qtd", `Quantidade de erros encontrados: ${logs.length}`);
